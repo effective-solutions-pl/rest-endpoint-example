@@ -16,10 +16,10 @@ import java.util.Objects;
 public class ExampleController {
 
     @GetMapping("/numbers")
-    public List<Integer> numbers(@RequestParam(name = "start") Integer start) {
-        Objects.nonNull(start);
+    public List<Integer> numbers(@RequestParam(name = "count") Integer count) {
+        Objects.nonNull(count);
         List<Integer> res = new ArrayList<>();
-        for (Integer i = 0; i <= start; i++) {
+        for (Integer i = 0; i <= count; i++) {
             res.add(i);
         }
         return res;
