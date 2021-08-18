@@ -5,37 +5,30 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.5.RELEASE</version>
+		<version>2.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>pl.effectivesolutions</groupId>
-	<artifactId>rest-endpoint-example</artifactId>
+	<groupId>pl.eo.example</groupId>
+	<artifactId>rabbit-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>rest-endpoint-example</name>
+	<name>rabbit-example</name>
 	<description>Demo project for Spring Boot</description>
-
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 	</properties>
-
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
 	</dependencies>
+
+
+
 
 	<build>
 		<plugins>
